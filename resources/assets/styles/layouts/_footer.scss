@@ -1,0 +1,134 @@
+footer {
+  width: 100%;
+  color: #fff;
+
+  .footer {
+    &__sub {
+      background-image: url("../images/index.png");
+      background-size: cover;
+      background-position: 0 0;
+      padding: 186px 18px;
+
+      input {
+        background-color: transparent;
+        color: #fff;
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    &__contacts {
+      padding: 60px 18px;
+      background-color: $footer_color_main;
+
+      h3 {
+        margin-bottom: 30px;
+      }
+
+      p {
+        width: 75%;
+      }
+
+      form {
+        padding-top: 15px;
+      }
+
+      input {
+        background-color: $footer_color_main;
+        border: none;
+        color: #fff;
+        border-bottom: 1px solid $violet_color;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li:hover {
+          color: lighten($violet_color, 50);
+          cursor: pointer;
+        }
+      }
+
+      .inner-content__row:last-child {
+        padding-bottom: 0;
+      }
+    }
+
+    &__copyright {
+      padding: 33px 18px;
+      background-color: $footer_color_dark;
+
+      p {
+        margin-bottom: 0;
+      }
+
+      .icon-block {
+        display: inline-block;
+      }
+
+      #copyright__row {
+        padding-bottom: 0;
+        justify-content: space-between;
+        color: $violet_color;
+
+        span {
+          color: #fff;
+        }
+
+        svg {
+          width: 15px;
+          height: 15px;
+
+          &:first-child {
+            margin-right: 80px;
+          }
+
+          &:hover {
+            cursor: pointer;
+            color: lighten($violet_color, 50);
+          }
+        }
+      }
+    }
+
+    &__text {
+      margin-bottom: 31px;
+    }
+
+    &__heading {
+      width: 706px;
+      max-width: 100%;
+      margin: auto;
+      margin-bottom: 37px;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  footer {
+    .footer {
+      &__sub {
+        h2 {
+          font-size: 35px;
+        }
+      }
+
+      &__contacts {
+        padding-bottom: 0;
+
+        form {
+          display: flex;
+        }
+
+        .inner-content {
+          &__row {
+            .column_50 {
+              width: 100%;
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

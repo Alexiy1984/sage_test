@@ -1,0 +1,34 @@
+.text-columns {
+  margin-top: 60px;
+
+  &__title {
+    display: flex;
+
+    .fake-line {
+      display: flex;
+      flex-grow: 1;
+      margin-right: 29px;
+      border-bottom: 1px solid #c9c6ca;
+    }
+  }
+
+  p {
+    margin-top: 25px;
+
+    &:first-child {
+      margin-top: 30px;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .home {
+    .text-columns {
+      flex-direction: column;
+
+      .column_50 {
+        width: 100%;
+      }
+    }
+  }
+}

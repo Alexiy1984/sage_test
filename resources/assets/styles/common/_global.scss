@@ -1,0 +1,100 @@
+.text-color {
+  &_pink {
+    color: $pink_color;
+  }
+
+  &_violet {
+    color: $violet_color;
+  }
+}
+
+.bg-color_gray {
+  background-color: $bg_color;
+}
+
+.heading {
+  font-family: "Roboto Condensed", sans-serif;
+
+  &_big {
+    font-size: 75px;
+  }
+
+  &_medium {
+    font-size: 50px;
+  }
+
+  &_small {
+    font-size: 30px;
+  }
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+
+  &_small {
+    font-size: 15px;
+  }
+
+  &_medium {
+    font-size: 18px;
+  }
+
+  &_big {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  &_bold {
+    font-weight: bold;
+  }
+
+  &_light {
+    font-weight: lighter;
+  }
+}
+
+.bg-color-gray_half {
+  background: linear-gradient(to bottom, #fff, #fff 50%, $bg_color 50%, $bg_color);
+}
+
+.hr_styled {
+  display: inline-block;
+  height: 1px;
+  background-color: #e93cac;
+  width: 50%;
+}
+
+@include media-breakpoint-down(md) {
+  .text {
+    &_big {
+      margin-bottom: 10px;
+    }
+  }
+
+  .heading {
+    &_big {
+      font-size: 50px;
+    }
+
+    &_medium {
+      font-size: 32px;
+    }
+
+    &_small {
+      font-size: 25px;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .heading {
+    &_big {
+      font-size: 32px;
+    }
+
+    &_medium {
+      font-size: 25px;
+    }
+  }
+}
