@@ -8,8 +8,8 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/app/themes/sage",
-  "devUrl": "http://wordpress.test/wp_test",
+  "publicPath": "/wp_test/wp-content/themes/sage_test",
+  "devUrl": "http://wordpress.test/",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
